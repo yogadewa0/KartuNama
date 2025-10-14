@@ -49,6 +49,7 @@ class MainActivity : ComponentActivity() {
                         stringResource(R.string.full_name),
                         stringResource(R.string.title),
                         stringResource(R.string.phone),
+                        stringResource(R.string.socmed),
                     )
                 }
             }
@@ -60,6 +61,7 @@ class MainActivity : ComponentActivity() {
 fun KartuNama(name: String,
               title: String,
               phone: String,
+              socmed: String,
               modifier: Modifier = Modifier) {
     Box(
         modifier = modifier.fillMaxSize().
@@ -116,6 +118,14 @@ fun KartuNama(name: String,
                     color = colorResource(R.color.sacramento)
                 )
             }
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(Icons.Rounded.Phone, contentDescription = "Socmed Icon", tint = colorResource(R.color.sacramento))
+                Spacer(modifier = Modifier.width(24.dp))
+                Text(
+                    text = socmed,
+                    color = colorResource(R.color.sacramento)
+                )
+            }
         }
     }
 }
@@ -128,6 +138,7 @@ fun KartuNamaPreview() {
             stringResource(R.string.full_name),
             stringResource(R.string.title),
             stringResource(R.string.phone),
+            stringResource(R.string.socmed),
         )
     }
 }
