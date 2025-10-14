@@ -95,7 +95,10 @@ fun KartuNama(name: String,
 
         // Bottom Contact list
         Column(
-
+            verticalArrangement = Arrangement.spacedBy(16.dp)
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 16.dp)
         ) {  }
     }
 }
