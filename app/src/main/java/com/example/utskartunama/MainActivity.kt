@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Phone
+import androidx.compose.material.icons.rounded.Share
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -119,7 +120,7 @@ fun KartuNama(name: String,
                 )
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(Icons.Rounded.Phone, contentDescription = "Socmed Icon", tint = colorResource(R.color.sacramento))
+                Icon(Icons.Rounded.Share, contentDescription = "Socmed Icon", tint = colorResource(R.color.sacramento))
                 Spacer(modifier = Modifier.width(24.dp))
                 Text(
                     text = socmed,
