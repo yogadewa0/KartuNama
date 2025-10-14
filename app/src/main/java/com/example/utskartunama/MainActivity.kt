@@ -13,12 +13,16 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Phone
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
@@ -41,7 +45,8 @@ class MainActivity : ComponentActivity() {
                 ) {
                     KartuNama(
                         stringResource(R.string.full_name),
-                        stringResource(R.string.title)
+                        stringResource(R.string.title),
+                        stringResource(R.string.phone),
                     )
                 }
             }
@@ -52,6 +57,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun KartuNama(name: String,
               title: String,
+              phone: String,
               modifier: Modifier = Modifier) {
     Box(
         modifier = modifier.fillMaxSize().
@@ -99,7 +105,13 @@ fun KartuNama(name: String,
             modifier = Modifier
                 .align(Alignment.BottomCenter)
                 .padding(bottom = 16.dp)
-        ) {  }
+        ) {  
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(Icons.Rounded.Phone, contentDescription = "Phone Icon", tint = Color(colorResource(R.color.sacramento)))
+                Spacer(modifier = Modifier.width(24.dp))
+                Text(text = phone)
+            }
+        }
     }
 }
 
@@ -109,7 +121,8 @@ fun KartuNamaPreview() {
     UTSKartuNamaTheme {
         KartuNama(
             stringResource(R.string.full_name),
-            stringResource(R.string.title)
+            stringResource(R.string.title),
+            stringResource(R.string.phone),
         )
     }
 }
