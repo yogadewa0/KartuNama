@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.utskartunama.ui.theme.UTSKartuNamaTheme
@@ -33,7 +34,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     KartuNama(
-
+                        stringResource(R.string.full_name),
+                        stringResource(R.string.title)
                     )
                 }
             }
@@ -69,6 +71,11 @@ fun KartuNama(name: String,
                 )
             }
         }
+
+        // Bottom Contact list
+        Column(
+
+        ) {  }
     }
 }
 
@@ -77,7 +84,8 @@ fun KartuNama(name: String,
 fun KartuNamaPreview() {
     UTSKartuNamaTheme {
         KartuNama(
-
+            stringResource(R.string.full_name),
+            stringResource(R.string.title)
         )
     }
 }
