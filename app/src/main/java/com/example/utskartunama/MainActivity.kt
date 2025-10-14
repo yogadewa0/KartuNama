@@ -5,8 +5,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
@@ -101,13 +103,13 @@ fun KartuNama(name: String,
 
         // Bottom Contact list
         Column(
-            verticalArrangement = Arrangement.spacedBy(16.dp)
+            verticalArrangement = Arrangement.spacedBy(16.dp),
             modifier = Modifier
                 .align(Alignment.BottomCenter)
                 .padding(bottom = 16.dp)
         ) {  
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(Icons.Rounded.Phone, contentDescription = "Phone Icon", tint = Color(colorResource(R.color.sacramento)))
+                Icon(Icons.Rounded.Phone, contentDescription = "Phone Icon", tint = colorResource(R.color.sacramento))
                 Spacer(modifier = Modifier.width(24.dp))
                 Text(text = phone)
             }
