@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">UTS Kartu Nama</string>
+    <string name="app_name">Kartu Nama</string>
+    <string name="full_name">Jane Doe</string>
+    <string name="title">CEO</string>
 </resources>
