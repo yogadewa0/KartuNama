@@ -115,27 +115,27 @@ fun KartuNama(name: String,
                 .padding(bottom = 16.dp)
         ) {  
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(Icons.Rounded.Phone, contentDescription = "Phone Icon", tint = colorResource(R.color.sacramento))
+                Icon(Icons.Rounded.Phone, contentDescription = "Phone Icon", tint = colorResource(R.color.pine))
                 Spacer(modifier = Modifier.width(24.dp))
                 Text(
                     text = phone,
-                    color = colorResource(R.color.sacramento)
+                    color = colorResource(R.color.pine)
                 )
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(Icons.Rounded.Share, contentDescription = "Socmed Icon", tint = colorResource(R.color.sacramento))
+                Icon(Icons.Rounded.Share, contentDescription = "Socmed Icon", tint = colorResource(R.color.pine))
                 Spacer(modifier = Modifier.width(24.dp))
                 Text(
                     text = socmed,
-                    color = colorResource(R.color.sacramento)
+                    color = colorResource(R.color.pine)
                 )
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(Icons.Rounded.Email, contentDescription = "Email Icon", tint = colorResource(R.color.sacramento))
+                Icon(Icons.Rounded.Email, contentDescription = "Email Icon", tint = colorResource(R.color.pine))
                 Spacer(modifier = Modifier.width(24.dp))
                 Text(
                     text = email,
-                    color = colorResource(R.color.sacramento)
+                    color = colorResource(R.color.pine)
                 )
             }
         }

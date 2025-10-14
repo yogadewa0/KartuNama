@@ -2,7 +2,7 @@
     <string name="app_name">Kartu Nama</string>
     <string name="full_name">Jane Doe</string>
     <string name="title">Android Developer Extraordinaire</string>
-    <string name="phone">+62 1234 5678</string>
+    <string name="phone">+62 1234 5678 9012</string>
     <string name="socmed">@AndroidDev</string>
     <string name="email">jane.doe@android.com</string>
 </resources>
