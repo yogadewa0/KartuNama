@@ -111,7 +111,10 @@ fun KartuNama(name: String,
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(Icons.Rounded.Phone, contentDescription = "Phone Icon", tint = colorResource(R.color.sacramento))
                 Spacer(modifier = Modifier.width(24.dp))
-                Text(text = phone)
+                Text(
+                    text = phone,
+                    color = colorResource(R.color.sacramento)
+                )
             }
         }
     }
