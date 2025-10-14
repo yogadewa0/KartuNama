@@ -81,6 +81,12 @@ fun KartuNama(name: String,
                 textAlign = TextAlign.Center,
                 color = colorResource(R.color.stone_black)
             )
+            Text(
+                text = title,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorResource(R.color.android_green)
+            )
         }
 
         // Bottom Contact list
