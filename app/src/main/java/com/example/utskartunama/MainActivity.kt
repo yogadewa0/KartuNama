@@ -119,7 +119,7 @@ fun KartuNama(name: String,
                 Spacer(modifier = Modifier.width(24.dp))
                 Text(
                     text = phone,
-                    color = colorResource(R.color.pine)
+                    color = colorResource(R.color.stone_black)
                 )
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
@@ -127,7 +127,7 @@ fun KartuNama(name: String,
                 Spacer(modifier = Modifier.width(24.dp))
                 Text(
                     text = socmed,
-                    color = colorResource(R.color.pine)
+                    color = colorResource(R.color.stone_black)
                 )
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
@@ -135,7 +135,7 @@ fun KartuNama(name: String,
                 Spacer(modifier = Modifier.width(24.dp))
                 Text(
                     text = email,
-                    color = colorResource(R.color.pine)
+                    color = colorResource(R.color.stone_black)
                 )
             }
         }
