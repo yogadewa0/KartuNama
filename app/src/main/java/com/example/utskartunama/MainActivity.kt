@@ -7,7 +7,9 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -71,19 +73,21 @@ fun KartuNama(name: String,
                 Image(
                     painter = painterResource(R.drawable.android_logo),
                     contentDescription = null,
-                    modifier = Modifier.size(65.dp)
+                    modifier = Modifier.size(70.dp)
                 )
             }
+
+            Spacer(Modifier.height(15.dp))
             Text(
                 text = name,
-                fontSize = 38.sp,
+                fontSize = 40.sp,
                 fontWeight = FontWeight.ExtraBold,
                 textAlign = TextAlign.Center,
                 color = colorResource(R.color.stone_black)
             )
             Text(
                 text = title,
-                fontSize = 16.sp,
+                fontSize = 15.sp,
                 fontWeight = FontWeight.Bold,
                 color = colorResource(R.color.android_green)
             )
