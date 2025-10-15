@@ -109,6 +109,7 @@ fun KartuNama(name: String,
         }
 
         // Bottom Contact list
+        // Program sudah di test (166)
         Column(
             verticalArrangement = Arrangement.spacedBy(16.dp),
             modifier = Modifier
