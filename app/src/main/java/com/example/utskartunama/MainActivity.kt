@@ -73,6 +73,7 @@ fun KartuNama(name: String,
         padding(horizontal = 24.dp, vertical = 16.dp)
     ) {
         // Upper main page (Profile Pic, Full Name, Title)
+        // Program Sudah Di Test (107)
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.align(Alignment.Center)
